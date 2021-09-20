@@ -1,0 +1,31 @@
+.form-field {
+  display: inline-block;
+  margin: 0 auto 70px;
+
+  &__select {
+    outline: 0;
+    background-color: #f1cc9d;
+    border-top: #f1cc9d;
+    border-right: #f1cc9d;
+    border-left: #f1cc9d;
+    width: 173px;
+
+    &--adress {
+      width: 323px;
+    }
+  }
+
+  @include onMobile {
+    display: block;
+
+    .page__section-title {
+      font-size: 60px;
+      line-height: 67px;
+      text-align: center;
+    }
+
+    .form-field__select {
+      width: 100%;
+    }
+  }
+}

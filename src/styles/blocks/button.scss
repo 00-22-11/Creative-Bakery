@@ -1,0 +1,53 @@
+.button {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 160px;
+  height: 40px;
+
+  box-sizing: border-box;
+  background-color: $light-brown;
+  border-radius: 40px;
+
+  color: $dark-brown;
+  text-decoration: none;
+
+  border: 2px solid $light-brown;
+  
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &--inline {
+    display: inline-block;
+    line-height: 40px;
+    margin-left: 40px;
+  }
+
+  &:hover {
+    background: none;
+  }
+
+  &:active {
+    background: #e39a3b;
+    opacity: 0.8;
+  }
+
+  &--disabled {
+    background: #e0e0e0;
+    color: #828282;
+    border-color: #e0e0e0;
+  }
+
+  &--section-align {
+    margin: 0 auto 80px;
+  }
+
+  @include onMobile {
+    &--inline {
+      display: block;
+      margin: 40px auto 0;
+    }
+  }
+}

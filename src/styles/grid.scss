@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 150px 150px 150px 1fr;
+  height: 100vh;
+
+  @for $start from 1 through 6 {
+    @for $end from $start through 6 {
+      &__item--#{$start}-#{$end} {
+        grid-column: #{$start} / #{$end};
+      }
+    }
+  }
+
+  @for $startt from 1 through 5 {
+    @for $endd from $startt through 5 {
+      &__item-row--#{$startt}-#{$endd} {
+        grid-row: #{$startt} / #{$endd};
+      }
+    }
+  }
+}

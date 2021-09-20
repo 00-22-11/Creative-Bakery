@@ -1,0 +1,87 @@
+.about {
+
+  &__about {
+    margin-bottom: 145px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    margin-bottom: 60px;
+    text-align: center;
+    transition: 0.4s;
+
+    &:hover {
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &__photo {
+    margin-bottom: 15px;
+    transition: 0.4s;
+
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+
+  &__year {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 71px;
+    text-align: center;
+    color: $dark-brown;
+    margin-bottom: 7px;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: $dark-brown;
+
+    transition: 0.4s;
+
+    &:hover {
+      letter-spacing: 0.5px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+  }
+
+  &__content-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__mobile-text {
+    display: none;
+  }
+
+  @include onMobile {
+
+    &__content {
+      overflow: scroll;
+    }
+
+    &__content-items {
+      margin-right: 20px;
+    }
+
+    &__description--desktop {
+      display: none;
+    }
+
+    &__mobile-text {
+      display: block;
+    }
+  }
+}

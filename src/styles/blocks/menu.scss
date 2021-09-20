@@ -1,0 +1,29 @@
+.menu {
+  display: none;
+  background-color: $light-brown;
+  width: 57vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  transform: translate(100%);
+
+  &:target {
+    transform: translate(0);
+  }
+
+  &__container {
+    padding: 10px;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include onMobile {
+    display: block;
+  }
+}
