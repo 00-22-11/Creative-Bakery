@@ -1,6 +1,6 @@
-[Figma](https://www.figma.com/file/nHz8bflIwJaWP3P99vKTH5/miami_home_new?node-id=16033%3A3)
+[Figma](https://www.figma.com/file/dY3izAm0Vspsmra4lQWQIP/Bakerlab-FE-students?node-id=0%3A1)
 
-[Project](https://00-22-11.github.io/Miami/)
+[Project](https://00-22-11.github.io/Creative-Bakery/)
 
 Technologies used in project:
 HTML5, CSS(SCSS), BEM-methodology, Adaptive design
